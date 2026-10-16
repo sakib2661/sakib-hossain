@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+#navBar{
+    width:100%;
+    background-color:rgb(1, 16, 22);
+    height:50px;
+    margin:0;
+    padding:0;
+}
+#navBar,ul{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin:0;
+    padding: 10px;
+}
+#navBar,ul,li{
+    padding:10px;
+}
+#navBar,ul,li,a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: box-shadow 0.3s ease; 
+}
+#navBar ul li a:hover{
+    font-size: 25px;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(240, 233, 233,1.0);
+    padding: 5px;
+}
+#hero{
+    width:100%;
+}
+#hero,img{
+    width:100%;
+}
+#aboutHeading{
+    text-align:center;
+}
+#about{
+    width: 100%;
+    text-align:center;
+}
+#subAbout{
+    text-align:center;
+    width:90%;
+    border:3px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius:10px;
+}
+@media(min-width: 700px){
+    #about{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #subAbout{
+        display:flex;
+        justify-content: center;
+        width:90%;
+        border:3px solid black;
+        margin: 10px;
+        border-radius:10px;
+    }
+    #subAbout1{
+        padding:15px;
+    }
+    #subAbout2{
+        padding:15px;
+    }
+    #project{
+        padding:15px;
+    }
+}
+#socialMedia{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(1, 16, 22);
+    height:100px;
+    gap: 20px; 
+}
+#fb i, #x i, #linkedin i, #youtube i, #instagram i {
+  color: #708197;
+  font-size: 40px;         
+  transition: color 0.3s;
+}
+#fb:hover i { color: #1877f2; }
+#x:hover i { color:  #ffffff;; }
+#linkedin:hover i { color: #0077b5; }
+#youtube:hover i { color: #ff0000; }
+#instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 4px 8px rgba(214, 36, 159, 0.3));
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+footer{
+    background-color: rgb(1, 16, 22);
+    color: white;
+    text-align:center;
+    padding: 20px;
+}
