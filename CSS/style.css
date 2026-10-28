@@ -52,15 +52,56 @@ a{
     width:100%;
 }
 
-#aboutHeading{
-    text-align:center;
-    margin: 2px;
+.hTwo {
+    text-align: center;
+    margin: 10px;
     padding: 2px;
 }
-#about{
+
+#projects{
     width: 100%;
+    display: flex;
+    justify-content: center;
     padding:10px;
 }
+#subProjects{
+    width:90%;
+    border:3px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius:10px;
+}
+.pCss {
+    border: 2.2px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+.pCss img{
+    border: 1.5px solid black;
+    border-radius: 10px;
+    height:200px;
+}
+.pCss div{
+    text-align: center;
+}
+.pCss div button{
+    padding:7px;
+    color: white;
+    background-color: rgb(1, 29, 41);
+    border: none;
+    border-radius: 8px; 
+    font-weight: bold;
+}
+
+#about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding:10px;
+}
+
 #subAbout{
     width:90%;
     border:3px solid black;
@@ -69,32 +110,14 @@ a{
     border-radius:10px;
 }
 
-@media(min-width: 700px){
-    #about{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    #subAbout{
-        display:flex;
-        justify-content: center;
-        width:90%;
-        border:3px solid black;
-        margin: 10px;
-        border-radius:10px;
-        padding:10px;
-    }
+#subAbout div{
+    margin: 7px 0 7px 0;
 }
-
 
 #event{
     width: 100%;
     text-align:center;
-}
-
-#eventHeading{
-    text-align:center;
-    margin:10px;
+    padding:5px;
 }
 
 .time{
@@ -139,4 +162,44 @@ footer{
     color: white;
     text-align:center;
     padding: 20px;
+}
+
+@media(min-width: 700px){
+    #projects{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .pSub{
+        display: flex;
+        justify-content: center;
+    }
+    .pCss:hover {
+        transform: scale(1.1);
+    }
+    #pLfr{
+        text-align: center;
+        width: 30%;
+        margin:10px;
+    }
+    #pAiTutor{
+        text-align: center;
+        width: 30%;
+        margin:10px;
+    }
+    #test{
+        text-align: center;
+        width: 30%;
+        margin:10px;
+    }
+
+    #about{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #subAbout{
+        display:flex;
+        justify-content: center;
+    }
 }

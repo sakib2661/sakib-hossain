@@ -10,9 +10,11 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/utilities.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
+
     <div id="navBar">
       <div>
         <ul>
@@ -36,12 +38,37 @@
         </ul>
       </div>
     </div>
+    
     <div id="hero">
-      <img src="IMAGES/hero.png" />
+      <img src="IMAGES/root/hero.png" alt="Hero Image" />
     </div>
 
-    <h2 id="aboutHeading">About Me</h2>
+    <h2 class="hTwo">Projects</h2>
+    <div id="projects">
+      <div id="subProjects">
+        <div class="pSub">
+          <div id="pLfr" class="pCss">
+            <img src="IMAGES/root/lfr.png">
+            <div><button> Read more</button></div>
+            <div></div>
+          </div>
 
+          <div id="pAiTutor" class="pCss">
+            <img src="IMAGES/root/aiTutor.jpeg">
+            <div><button> Read more</button></div>
+            <div></div>
+          </div>
+          
+          <div id="test" class="pCss">
+            <img src="IMAGES/root/location.jpeg">
+            <div><button> Read more</button></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="hTwo">About Me</h2>
     <div id="about">
       <div id="subAbout">
         <div>
@@ -66,16 +93,22 @@
 
     <div id="event">
       <div>
-        <h2 id="eventHeading">Events</h2>
+        <h2 class="hTwo">Events</h2>
         <h4 class="time">October 2026</h4>
-        <a style="color: red;" href="PAGES/careerGuidelines2026.html"
-          target="_blank"
-          rel="noopener noreferrer"> 
-            Computer Science Career Guideline Event 
-        </a>Organized by CST batch 24-25 at A K Khan UCEP Polytechnic Institute
+        <p>
+          <a
+            style="color: red;"
+            href="PAGES/careerGuidelines2026.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Computer Science Career Guideline Event
+          </a>
+          Organized by CST batch 24-25 at A K Khan UCEP Polytechnic Institute
+        </p>
       </div>
-      
     </div>
+
     <div id="socialMedia">
       <div id="fb">
         <a
@@ -113,11 +146,13 @@
         <a
           href="https://www.instagram.com/sakibh3330"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           <i class="fa-brands fa-square-instagram"></i>
         </a>
       </div>
     </div>
+
     <footer>
       <div><a href="tel:+88001308790965"><b>Phone:- </b> 01308790965</a></div>
       <div>
